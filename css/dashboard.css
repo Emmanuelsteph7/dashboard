@@ -1,0 +1,241 @@
+.container-fluid {
+	padding: 0 5%;
+}
+
+.dashboard-nav {
+	width: 200px;
+	top: 0;
+	left: 0;
+	background-color: royalblue;
+	color: white;
+	min-height: 100vh;
+	transition: 0.1s;
+}
+
+.dashboard-nav.change {
+	width: 60px;
+}
+
+.nav-href-span {
+	transition: 0.5s;
+}
+
+.brand-span {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.brand.change,
+.nav-href-span.change {
+	display: none;
+}
+
+.nav-toggle {
+	display: none;
+	width: 20px;
+	z-index: 100;
+	height: 20px;
+	flex-direction: column;
+	justify-content: space-around;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.nav-toggle.change {
+	transform: translateX(15px);
+}
+
+.nav-icon.change {
+	transform: translateX(10px);
+}
+
+.toggle-icon {
+	width: 100%;
+	height: 4px;
+	background-color: white;
+	transition: 0.5s;
+}
+
+/* .nav-toggle.change .toggle1 {
+	transform: rotate(45deg) translateY(10px);
+}
+
+.nav-toggle.change .toggle2 {
+	opacity: 0;
+}
+
+.nav-toggle.change .toggle3 {
+	transform: rotate(-45deg) translateY(-10px);
+} */
+
+.nav-menu {
+	list-style: none;
+}
+
+.dashboard-main {
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-left: 200px;
+	min-height: 100vh;
+	transition: 0.5s;
+}
+
+.dashboard-main.change {
+	margin-left: 60px;
+}
+
+.dashboard-header {
+	border-bottom: 1px solid royalblue;
+}
+
+.dashboard-header .container-fluid {
+	height: 70px;
+}
+
+.dashboard-header img {
+	border-radius: 50%;
+}
+
+.bal-image img {
+	width: 50px;
+	height: 50px;
+}
+
+.bal {
+	background-color: white;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bal.name {
+	color: #ccc;
+	font-size: 16px;
+}
+
+.bal-amt {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+.form-btn {
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	background-color: royalblue;
+	color: white;
+}
+
+.table-div,
+.info,
+.stats-div,
+.bday {
+	background-color: white;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.table-div {
+	overflow-x: auto;
+}
+
+.table-div th {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bday-pic img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.bday-btn {
+	outline: none;
+	border: none;
+	background-color: royalblue;
+	color: white;
+}
+
+.stats-info-div {
+	height: 150px;
+}
+
+.blue {
+	background-color: rgb(28, 187, 226);
+}
+
+.green {
+	background-color: rgb(23, 214, 23);
+}
+
+.grey {
+	background-color: rgba(15, 15, 41, 0.308);
+}
+
+.red {
+	background-color: rgb(209, 57, 57);
+}
+
+.headers {
+	font-size: 24px;
+}
+
+@media (max-width: 1199px) {
+	.dashboard-nav {
+		width: 150px;
+	}
+
+	.dashboard-main {
+		margin-left: 150px;
+	}
+}
+
+@media (max-width: 991px) {
+	.dashboard-nav {
+		width: 60px;
+		z-index: 100;
+	}
+
+	.brand,
+	.nav-href-span {
+		display: none;
+	}
+
+	.brand.change,
+	.nav-href-span.change {
+		display: inline;
+	}
+
+	.nav-toggle,
+	.nav-icon {
+		transform: translateX(12px);
+	}
+
+	.nav-toggle.change,
+	.nav-icon.change {
+		transform: translateX(0);
+	}
+
+	.brand.change,
+	.link-span.change {
+		display: inline;
+	}
+
+	.dashboard-nav.change {
+		width: 250px;
+	}
+
+	.dashboard-main {
+		margin-left: 60px;
+	}
+
+	.info {
+		margin-top: 48px;
+	}
+
+	.others {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 575px) {
+	.market .row {
+		overflow-y: auto;
+	}
+}

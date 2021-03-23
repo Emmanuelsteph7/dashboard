@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-------- Meta Tags --------->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="rgb(109, 152, 226)" />
+		<title>HEXEBA || Dashboard</title>
+
+		<!--------- Stylesheets --------->
+		<link rel="stylesheet" href="../../libraries/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../libraries/css/all.min.css" />
+		<link rel="stylesheet" href="../../libraries/css/aos.css" />
+		<link rel="stylesheet" href="../../libraries/css/myVariables.css" />
+		<link rel="stylesheet" href="dashboard.css" />
+	</head>
+
+	<body class="">
+		<nav class="dashboard-nav position-fixed vh-100">
+			<div class="nav-brand d-flex mt-4 px-2 justify-content-between">
+				<span class="brand">HEXEBA</span>
+				<div class="nav-toggle d-flex">
+					<div class="toggle-icon toggle1"></div>
+					<div class="toggle-icon toggle2"></div>
+					<div class="toggle-icon toggle3"></div>
+				</div>
+			</div>
+			<ul class="nav-menu mt-5 px-2">
+				<li class="nav-item mt-3">
+					<a class="nav-item text-white" href="#"
+						><span class="link-span">Products</span></a
+					>
+				</li>
+				<li class="nav-item mt-3">
+					<a class="nav-item text-white" href="#"
+						><span class="link-span">Products</span></a
+					>
+				</li>
+				<li class="nav-item mt-3">
+					<a class="nav-item text-white" href="#"
+						><span class="link-span">Logout</span></a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="dashboard-main">
+			<header class="dashboard-header">
+				<div class="container-fluid">
+					<div
+						class="row align-items-center w-100 m-0 h-100 justify-content-between"
+					>
+						<h4 class="header-brand">HEXEBA BOT</h4>
+						<div class="header-social">
+							<span class="header-name mr-sm-3">Hi John</span>
+							<img
+								position-fixed
+								width="50px"
+								height="50px"
+								src="../../images/technical-support.png"
+							/>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="dashboard-overview mt-4">
+				<div class="container-fluid">
+					<div class="row m-0 w-100 justify-content-between">
+						<h4 class="overview p-0 col-12">Overview</h4>
+						<div class="bal mt-3 d-flex p-0 col-12 col-sm-5">
+							<div class="bal-image d-flex align-items-center mx-3">
+								<img src="../../images/currency.png" alt="" />
+							</div>
+							<div class="bal-info">
+								<p class="bal-name px-3">Start Balance</p>
+								<p class="bal-amt px-3">$0</p>
+							</div>
+						</div>
+						<div class="bal mt-3 ml-sm-4 d-flex p-0 col-12 col-sm-5">
+							<div class="bal-image d-flex align-items-center mx-3">
+								<img src="../../images/currency.png" alt="" />
+							</div>
+							<div class="bal-info">
+								<p class="bal-name px-3">End Balance</p>
+								<p class="bal-amt px-3">$0</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="dashboard-form mt-5">
+				<div class="container-fluid">
+					<div class="row m-0 w-100">
+						<form class="form p-0 col-12 col-sm-8 col-md-6 mx-auto">
+							<div class="container-fluid p-0 d-flex h-sm-100">
+								<div class="row justify-content-start h-sm-100">
+									<h4 class="form-header col-12 text-left mx-auto">
+										Your Subscription
+									</h4>
+									<div class="input-group col-12 col-md-10 mt-4">
+										<input
+											type="text"
+											placeholder="API Key"
+											name="api-key"
+											id="api-key"
+											class="input form-control"
+										/>
+									</div>
+									<div class="input-group col-12 col-md-10 mt-4">
+										<input
+											type="text"
+											placeholder="Exchange Platform"
+											name="exchangePlatform"
+											id="exchangePlatform"
+											class="input form-control"
+										/>
+									</div>
+									<div class="form-submit col-12 col-md-10 mt-4">
+										<button type="submit" class="form-btn py-2 w-100">
+											Subscribe
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="market mt-4">
+				<div class="container-fluid">
+					<div class="row w-100 m-0">
+						<h4 class="market-header col-12 text-left p-0">Market</h4>
+						<table class="market-table mt-3 col-12 col-md-10">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Price</th>
+									<th>Volume</th>
+									<th>24hrs</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="py-2">Bitcoin</td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+								</tr>
+								<tr>
+									<td class="py-2">Etherum</td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+								</tr>
+								<tr>
+									<td class="py-2">Ripple</td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+								</tr>
+								<tr>
+									<td class="py-2">Lite Coin</td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+									<td class="py-2"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-------- Script Tags --------->
+		<script src="../../libraries/js/jquery-3.5.1.min.js"></script>
+		<script src="../../libraries/js/bootstrap.min.js"></script>
+		<script src="../../libraries/js/aos.js"></script>
+		<script src="dashboard.js"></script>
+	</body>
+</html>
