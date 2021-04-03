@@ -318,11 +318,14 @@ body.dark .bday-btn {
   .dark-div {
     position: fixed;
     bottom: 30px;
-    right: 10px;
-    width: 30px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
     height: 30px;
     font-size: 2rem;
-    background-color: whitesmokes;
+    background-color: var(--main-bg-color);
     z-index: 1000;
   }
 }

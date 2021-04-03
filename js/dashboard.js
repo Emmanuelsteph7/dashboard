@@ -27,6 +27,7 @@ function hamburgerEffect() {
 
 const darkBtn = document.querySelector(".dark-icon");
 const body = document.body;
+const darkMeta = document.querySelector(".dark-meta");
 darkBtn.addEventListener("click", (e) => {
   if (darkBtn.classList.contains("fa-moon-o")) {
     darkBtn.classList.remove("fa-moon-o");
@@ -35,15 +36,24 @@ darkBtn.addEventListener("click", (e) => {
     body.classList.add("dark");
 
     localStorage.setItem("theme", "dark");
+
+    if (darkMeta.getAttribute("content") === "royalblue") {
+      darkMeta.removeAttribute("content");
+      darkMeta.setAttribute("content", "rgb(36, 42, 58)")
+    }
   } else if (darkBtn.classList.contains("fa-sun-o")) {
-    console.log("hi sun");
     darkBtn.classList.remove("fa-sun-o");
     darkBtn.classList.add("fa-moon-o");
 
     body.classList.remove("dark");
 
     localStorage.setItem("theme", "light");
+
+    if (darkMeta.getAttribute("content") === "rgb(36, 42, 58)") {
+      darkMeta.removeAttribute("content");
+      darkMeta.setAttribute("content", "royalblue")
   }
+}
 });
 
 window.addEventListener("load", () => {
