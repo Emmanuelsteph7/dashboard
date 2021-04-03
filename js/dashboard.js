@@ -1,36 +1,61 @@
+// Toggle Menu
 const hamburgerMenu = document.querySelector(".nav-toggle");
 
 hamburgerMenu.addEventListener("click", hamburgerEffect);
 
 function hamburgerEffect() {
-	hamburgerMenu.classList.toggle("change");
+  hamburgerMenu.classList.toggle("change");
 
-	let aside = document.querySelector(".dashboard-nav");
-	let span = document.querySelector(".brand");
-	aside.classList.toggle("change");
-	span.classList.toggle("change");
+  let aside = document.querySelector(".dashboard-nav");
+  let span = document.querySelector(".brand");
+  aside.classList.toggle("change");
+  span.classList.toggle("change");
 
-	let linkSpans = document.querySelectorAll(".nav-href-span");
-	for (let i = 0; i < linkSpans.length; i++) {
-		linkSpans[i].classList.toggle("change");
-	}
+  let linkSpans = document.querySelectorAll(".nav-href-span");
+  for (let i = 0; i < linkSpans.length; i++) {
+    linkSpans[i].classList.toggle("change");
+  }
 
-	let navIcons = document.querySelectorAll(".nav-icon");
-	for (let i = 0; i < navIcons.length; i++) {
-		navIcons[i].classList.toggle("change");
-	}
+  let navIcons = document.querySelectorAll(".nav-icon");
+  for (let i = 0; i < navIcons.length; i++) {
+    navIcons[i].classList.toggle("change");
+  }
 
-	let main = document.querySelector(".dashboard-main");
-	main.classList.toggle("change");
+  let main = document.querySelector(".dashboard-main");
+  main.classList.toggle("change");
 }
 
-// const links = document.querySelectorAll(".navbar-link");
+const darkBtn = document.querySelector(".dark-icon");
+const body = document.body;
+darkBtn.addEventListener("click", (e) => {
+  if (darkBtn.classList.contains("fa-moon-o")) {
+    darkBtn.classList.remove("fa-moon-o");
+    darkBtn.classList.add("fa-sun-o");
 
-// links.forEach((link) => {
-// 	link.addEventListener("click", () => {
-// 		hamburgerMenu.classList.toggle("change");
+    body.classList.add("dark");
 
-// 		let aside = document.querySelector(".navbar-menu");
-// 		aside.classList.toggle("change");
-// 	});
-// });
+    localStorage.setItem("theme", "dark");
+  } else if (darkBtn.classList.contains("fa-sun-o")) {
+    console.log("hi sun");
+    darkBtn.classList.remove("fa-sun-o");
+    darkBtn.classList.add("fa-moon-o");
+
+    body.classList.remove("dark");
+
+    localStorage.setItem("theme", "light");
+  }
+});
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("theme") === "light") {
+    darkBtn.classList.remove("fa-sun-o");
+    darkBtn.classList.add("fa-moon-o");
+
+    body.classList.remove("dark");
+  } else if (localStorage.getItem("theme") === "dark") {
+    darkBtn.classList.remove("fa-moon-o");
+    darkBtn.classList.add("fa-sun-o");
+
+    body.classList.add("dark");
+  }
+});

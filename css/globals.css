@@ -1,0 +1,20 @@
+/* variables */
+:root {
+  --main-color: royalblue;
+  --white-color: #ffffff;
+  --main-bg-color: rgba(0, 0, 0, 0.1);
+  --header-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  --name-color: #cccccc;
+  --text-color: #000000;
+  --outer-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark {
+  --header-shadow: 0 2px 3px rgba(255,255,255,0.3);
+  --main-color: rgb(36, 42, 58);
+  --white-color: rgb(36, 42, 58);
+  --main-bg-color: rgb(36, 42, 58, 0.7);
+  --name-color: #cccccc;
+  --text-color: #ffffff;
+  --outer-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}

@@ -1,275 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-------- Meta Tags --------->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="theme-color" content="rgb(109, 152, 226)" />
-		<title>EMING || Dashboard</title>
+  <head>
+    <!-------- Meta Tags --------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="royalblue" />
+    <title>Eming Dashboard</title>
 
-		<!--------- Stylesheets --------->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-<!-- 		<link rel="stylesheet" href="css/all.min.css" /> -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/aos.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/dashboard.css" />
-	</head>
+    <!--------- Stylesheets --------->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
 
-	<body class="">
-		<nav class="dashboard-nav position-fixed">
-			<div
-				class="nav-brand d-flex mt-4 px-2 align-items-center justify-content-between"
-			>
-				<div class="brand">
-					<i class="fa fa-rocket"></i>
-					<span class="brand-span ml-1">Eming</span>
-				</div>
-				<div class="nav-toggle d-flex">
-					<div class="toggle-icon toggle1"></div>
-					<div class="toggle-icon toggle2"></div>
-					<div class="toggle-icon toggle3"></div>
-				</div>
-			</div>
-			<ul class="nav-menu mt-5 px-2">
-				<li class="nav-item mt-5">
-					<a class="nav-href text-white" href="#">
-						<i class="fa fa-home nav-icon mr-2"></i>
-						<span class="nav-href-span">Home</span>
-					</a>
-				</li>
-				<li class="nav-item mt-5">
-					<a class="nav-href text-white" href="#">
-						<i class="fa fa-users nav-icon mr-2"></i>
-						<span class="nav-href-span">Team</span>
-					</a>
-				</li>
-				<li class="nav-item mt-5">
-					<a class="nav-href text-white" href="#">
-						<i class="fa fa-tasks nav-icon mr-2"></i>
-						<span class="nav-href-span">Tasks</span>
-					</a>
-				</li>
-				<li class="nav-item mt-5">
-					<a class="nav-href text-white" href="#">
-						<i class="fa fa-user nav-icon mr-2"></i>
-						<span class="nav-href-span">Account</span>
-					</a>
-				</li>
-				<li class="nav-item mt-5">
-					<a class="nav-href text-white" href="#">
-						<i class="fa fa-briefcase nav-icon mr-2"></i>
-						<span class="nav-href-span">Projects</span>
-					</a>
-				</li>
-				<li class="nav-item mt-5">
-					<a class="nav-href text-white" href="#">
-						<i class="fa fa-address-card nav-icon mr-2"></i>
-						<span class="nav-href-span">Contacts</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+  <body>
+    <nav class="dashboard-nav position-fixed">
+      <div
+        class="nav-brand d-flex mt-4 px-2 align-items-center justify-content-between"
+      >
+        <div class="brand">
+          <i class="fa fa-rocket"></i>
+          <span class="brand-span ml-1">Eming</span>
+        </div>
+        <div class="nav-toggle d-flex">
+          <div class="toggle-icon toggle1"></div>
+          <div class="toggle-icon toggle2"></div>
+          <div class="toggle-icon toggle3"></div>
+        </div>
+      </div>
+      <ul class="nav-menu mt-5 px-2">
+        <li class="nav-item mt-5">
+          <a class="nav-href text-white" href="#">
+            <i class="fa fa-home nav-icon mr-2"></i>
+            <span class="nav-href-span">Home</span>
+          </a>
+        </li>
+        <li class="nav-item mt-5">
+          <a class="nav-href text-white" href="#">
+            <i class="fa fa-users nav-icon mr-2"></i>
+            <span class="nav-href-span">Team</span>
+          </a>
+        </li>
+        <li class="nav-item mt-5">
+          <a class="nav-href text-white" href="#">
+            <i class="fa fa-tasks nav-icon mr-2"></i>
+            <span class="nav-href-span">Tasks</span>
+          </a>
+        </li>
+        <li class="nav-item mt-5">
+          <a class="nav-href text-white" href="#">
+            <i class="fa fa-user nav-icon mr-2"></i>
+            <span class="nav-href-span">Account</span>
+          </a>
+        </li>
+        <li class="nav-item mt-5">
+          <a class="nav-href text-white" href="#">
+            <i class="fa fa-briefcase nav-icon mr-2"></i>
+            <span class="nav-href-span">Projects</span>
+          </a>
+        </li>
+        <li class="nav-item mt-5">
+          <a class="nav-href text-white" href="#">
+            <i class="fa fa-address-card nav-icon mr-2"></i>
+            <span class="nav-href-span">Contacts</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-		<main class="dashboard-main pb-4">
-			<header class="dashboard-header">
-				<div class="container-fluid">
-					<div
-						class="row align-items-center w-100 m-0 h-100 justify-content-between"
-					>
-						<h4 class="header-brand">EMING</h4>
-						<div class="header-social">
-							<span class="header-name mr-sm-3">Hi John</span>
-							<img
-								position-fixed
-								width="50px"
-								height="50px"
-								src="images/boss.png"
-							/>
-						</div>
-					</div>
-				</div>
-			</header>
-			<section class="dashboard-overview mt-4">
-				<div class="container-fluid">
-					<div class="row m-0 w-100 justify-content-center">
-						<h4 class="headers overview p-0 col-12">Overview</h4>
-						<div class="bal mt-3 d-flex flex-wrap p-2 col-12 col-sm-5 col-xl">
-							<div class="bal-image d-flex align-items-center mx-3">
-								<img src="images/currency.png" alt="" />
-							</div>
-							<div class="bal-info">
-								<p class="bal-name px-3">Account Balance</p>
-								<p class="bal-amt px-3">$30,543.22</p>
-							</div>
-							<div class="view w-100 py-3 px-4 d-flex justify-content-start">
-								<a href="#">View all</a>
-							</div>
-						</div>
-						<div class="bal mt-3 ml-sm-4 d-flex flex-wrap p-2 col-12 col-sm-5 col-xl">
-							<div class="bal-image d-flex align-items-center mx-3">
-								<img src="images/currency.png" alt="" />
-							</div>
-							<div class="bal-info">
-								<p class="bal-name px-3">Pending</p>
-								<p class="bal-amt px-3">$22,897.34</p>
-							</div>
-							<div class="view w-100 py-3 px-4 d-flex justify-content-start">
-								<a href="#">View all</a>
-							</div>
-						</div>
-						<div class="bal mt-3 ml-sm-4 d-flex flex-wrap p-2 col-12 col-sm-5 col-xl">
-							<div class="bal-image d-flex align-items-center mx-3">
-								<img src="images/currency.png" alt="" />
-							</div>
-							<div class="bal-info">
-								<p class="bal-name px-3">Processed</p>
-								<p class="bal-amt px-3">$26,844</p>
-							</div>
-							<div class="view w-100 py-3 px-4 d-flex justify-content-start">
-								<a href="#">View all</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="activities mt-5">
-				<div class="container-fluid">
-					<div class="row m-0 w-100">
-						<div class="table-div overflow-scroll col-12 col-lg-9">
-							<h5 class=" headers table-header my-3">Recent Activities</h5>
-							<table class="table overflow-scroll-x">
-								<thead>
-									<tr>
-										<th class="py-3">Projects</th>
-										<th class="py-3">Start Date</th>
-										<th class="py-3">End Date</th>
-										<th class="py-3">Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="py-3">App Development</td>
-										<td class="py-3">15 Aug, 2020</td>
-										<td class="py-3">22 Aug, 2020</td>
-										<td class="py-3">
-											<span class="badge success">Success</span>
-										</td class="py-3">
-									</tr>
-									<tr>
-										<td class="py-3">Logo Design</td>
-										<td class="py-3">15 Aug, 2020</td>
-										<td class="py-3">22 Aug, 2020</td>
-										<td class="py-3">
-											<span class="badge success">Success</span>
-										</td>
-									</tr>
-									<tr>
-										<td class="py-3">Server setup</td>
-										<td class="py-3">15 Aug, 2020</td>
-										<td class="py-3">22 Aug, 2020</td>
-										<td class="py-3">
-											<span class="badge success">Success</span>
-										</td>
-									</tr>
-									<tr>
-										<td class="py-3">Web Development</td>
-										<td class="py-3">15 Aug, 2020</td>
-										<td class="py-3">22 Aug, 2020</td>
-										<td class="py-3">
-											<span class="badge success">Success</span>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="others col-12 col-lg-3 pr-0">
-                            <div class="container-fluid p-0">
-                                <div class="row justify-content-between m-0 w-100">
-                                    <div class="info col-12 col-sm-5 col-lg-12">
-                                        <div class="info-div p-2">
-                                            <div class="info-icon">
-                                                <i class=""></i>
-                                            </div>
-                                            <div class="info-status">
-                                                <h5 class="info-div-header">196</h5>
-                                                <span class="info-span">Number of staff</span>
-                                            </div>
-                                        </div>
-                                        <div class="info-div p-2">
-                                            <div class="info-icon">
-                                                <i class=""></i>
-                                            </div>
-                                            <div class="info-status">
-                                                <h5 class="info-div-header">16</h5>
-                                                <span class="info-span">Number of leave</span>
-                                            </div>
-                                        </div>
-                                        <div class="info-div p-2">
-                                            <div class="info-icon">
-                                                <i class=""></i>
-                                            </div>
-                                            <div class="info-status">
-                                                <h5 class="info-div-header">12</h5>
-                                                <span class="info-span">Profile Update request</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bday col-12 col-sm-5 col-lg-12 d-flex p-2 mt-5">
-                                        <div class="bday-pic d-flex align-items-center p-3">
-                                            <img src="images/boss.png" alt="bday pic" />
-                                        </div>
-                                        <div class="bday-info d-flex flex-column">
-                                            <h5 class="bday-header">John Mark</h5>
-                                            <span class="bday-span pb-2">Birthday Today</span>
-                                            <button class="bday-btn p-2 mt-2">Wish him</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-					</div>
-				</div>
-            </section>
-            <section class="stats mt-5 py-3">
-                <div class="container-fluid">
-                    <div class="row m-0 w-100">
-                        <div class="stats-div col-12">
-                            <h5 class=" headers stats-header my-3">Stats Reports</h5>
-                            <div class="stats-info mb-4 mt-2">
-                                <div class="container-fluid p-0">
-                                    <div class="row m-0 w-100 justify-content-between">
-                                        <div class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 blue">
-                                            <h5 class="stats-info-header">Income</h5>
-                                            <p class="stats-amt">$74,383.55</p>
-                                        </div>
-                                        <div class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 green">
-                                            <h5 class="stats-info-header">Sales</h5>
-                                            <p class="stats-amt">$111,234.55</p>
-                                        </div>
-                                        <div class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 grey">
-                                            <h5 class="stats-info-header">Users</h5>
-                                            <p class="stats-amt">340</p>
-                                        </div>
-                                        <div class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 red">
-                                            <h5 class="stats-info-header">Orders</h5>
-                                            <p class="stats-amt">1149</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <main class="dashboard-main pb-4">
+      <header class="dashboard-header">
+        <div class="container-fluid">
+          <div
+            class="row align-items-center w-100 m-0 h-100 justify-content-between"
+          >
+            <h4 class="header-brand">EMING</h4>
+            <div class="header-social">
+              <span class="header-name mr-sm-3">Hi John</span>
+              <span class="dark-div">
+                <i class="dark-icon fa fa-moon-o mr-sm-3"></i>
+              </span>
+              <img
+                position-fixed
+                width="50px"
+                height="50px"
+                src="images/boss.png"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="dashboard-overview mt-4">
+        <div class="container-fluid">
+          <div class="row m-0 w-100 justify-content-center">
+            <h4 class="headers overview p-0 col-12">Overview</h4>
+            <div class="bal mt-3 d-flex flex-wrap p-2 col-12 col-sm-5 col-xl">
+              <div class="bal-image d-flex align-items-center mx-3">
+                <img src="images/currency.png" alt="" />
+              </div>
+              <div class="bal-info">
+                <p class="bal-name px-3">Account Balance</p>
+                <p class="bal-amt px-3">$30,543.22</p>
+              </div>
+              <div class="view w-100 py-3 px-4 d-flex justify-content-start">
+                <a href="#">View all</a>
+              </div>
+            </div>
+            <div
+              class="bal mt-3 ml-sm-4 d-flex flex-wrap p-2 col-12 col-sm-5 col-xl"
+            >
+              <div class="bal-image d-flex align-items-center mx-3">
+                <img src="images/currency.png" alt="" />
+              </div>
+              <div class="bal-info">
+                <p class="bal-name px-3">Pending</p>
+                <p class="bal-amt px-3">$22,897.34</p>
+              </div>
+              <div class="view w-100 py-3 px-4 d-flex justify-content-start">
+                <a href="#">View all</a>
+              </div>
+            </div>
+            <div
+              class="bal mt-3 ml-sm-4 d-flex flex-wrap p-2 col-12 col-sm-5 col-xl"
+            >
+              <div class="bal-image d-flex align-items-center mx-3">
+                <img src="images/currency.png" alt="" />
+              </div>
+              <div class="bal-info">
+                <p class="bal-name px-3">Processed</p>
+                <p class="bal-amt px-3">$26,844</p>
+              </div>
+              <div class="view w-100 py-3 px-4 d-flex justify-content-start">
+                <a href="#">View all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="activities mt-5">
+        <div class="container-fluid">
+          <div class="row m-0 w-100">
+            <div class="table-div overflow-scroll col-12 col-lg-9">
+              <h5 class="headers table-header my-3">Recent Activities</h5>
+              <table class="table overflow-scroll-x">
+                <thead>
+                  <tr>
+                    <th class="py-3">Projects</th>
+                    <th class="py-3">Start Date</th>
+                    <th class="py-3">End Date</th>
+                    <th class="py-3">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-3">App Development</td>
+                    <td class="py-3">15 Aug, 2020</td>
+                    <td class="py-3">22 Aug, 2020</td>
+                    <td class="py-3">
+                      <span class="badge success">Success</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-3">Logo Design</td>
+                    <td class="py-3">15 Aug, 2020</td>
+                    <td class="py-3">22 Aug, 2020</td>
+                    <td class="py-3">
+                      <span class="badge success">Success</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-3">Server setup</td>
+                    <td class="py-3">15 Aug, 2020</td>
+                    <td class="py-3">22 Aug, 2020</td>
+                    <td class="py-3">
+                      <span class="badge success">Success</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-3">Web Development</td>
+                    <td class="py-3">15 Aug, 2020</td>
+                    <td class="py-3">22 Aug, 2020</td>
+                    <td class="py-3">
+                      <span class="badge success">Success</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="others col-12 col-lg-3 pr-0">
+              <div class="container-fluid p-0">
+                <div class="row justify-content-between m-0 w-100">
+                  <div class="info col-12 col-sm-5 col-lg-12">
+                    <div class="info-div p-2">
+                      <div class="info-icon">
+                        <i class=""></i>
+                      </div>
+                      <div class="info-status">
+                        <h5 class="info-div-header">196</h5>
+                        <span class="info-span">Number of staff</span>
+                      </div>
                     </div>
+                    <div class="info-div p-2">
+                      <div class="info-icon">
+                        <i class=""></i>
+                      </div>
+                      <div class="info-status">
+                        <h5 class="info-div-header">16</h5>
+                        <span class="info-span">Number of leave</span>
+                      </div>
+                    </div>
+                    <div class="info-div p-2">
+                      <div class="info-icon">
+                        <i class=""></i>
+                      </div>
+                      <div class="info-status">
+                        <h5 class="info-div-header">12</h5>
+                        <span class="info-span">Profile Update request</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bday col-12 col-sm-5 col-lg-12 d-flex p-2 mt-5">
+                    <div class="bday-pic d-flex align-items-center p-3">
+                      <img src="images/boss.png" alt="bday pic" />
+                    </div>
+                    <div class="bday-info d-flex flex-column">
+                      <h5 class="bday-header">John Mark</h5>
+                      <span class="bday-span pb-2">Birthday Today</span>
+                      <button class="bday-btn p-2 mt-2">Wish him</button>
+                    </div>
+                  </div>
                 </div>
-            </section>
-		</main>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats mt-5 py-3">
+        <div class="container-fluid">
+          <div class="row m-0 w-100">
+            <div class="stats-div col-12">
+              <h5 class="headers stats-header my-3">Stats Reports</h5>
+              <div class="stats-info mb-4 mt-2">
+                <div class="container-fluid p-0">
+                  <div class="row m-0 w-100 justify-content-between">
+                    <div
+                      class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 blue"
+                    >
+                      <h5 class="stats-info-header">Income</h5>
+                      <p class="stats-amt">$74,383.55</p>
+                    </div>
+                    <div
+                      class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 green"
+                    >
+                      <h5 class="stats-info-header">Sales</h5>
+                      <p class="stats-amt">$111,234.55</p>
+                    </div>
+                    <div
+                      class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 grey"
+                    >
+                      <h5 class="stats-info-header">Users</h5>
+                      <p class="stats-amt">340</p>
+                    </div>
+                    <div
+                      class="stats-info-div d-flex flex-column justify-content-center text-white align-items-center mb-3 col-12 col-sm-5 col-lg-2 red"
+                    >
+                      <h5 class="stats-info-header">Orders</h5>
+                      <p class="stats-amt">1149</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<!-------- Script Tags --------->
-		<script src="js/jquery-3.5.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/aos.js"></script>
-		<script src="js/dashboard.js"></script>
-	</body>
+    <!-------- Script Tags --------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
 </html>
